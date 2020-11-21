@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
     <navbar
       :cart="cart"
       :cartQty="cartQty"
@@ -35,14 +35,14 @@ export default {
   computed: {
     cartTotal: function () {
       let sum = 0;
-      for (key in this.cart) {
+      for (let key in this.cart) {
         sum = sum + this.cart[key].product.price * this.cart[key].qty;
       }
       return sum;
     },
     cartQty: function () {
       let qty = 0;
-      for (key in this.cart) {
+      for (let key in this.cart) {
         qty = qty + this.cart[key].qty;
       }
       return qty;
