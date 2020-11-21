@@ -50,7 +50,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 export default {
   name: "navbar",
-  props: ["cart", "cartQty", "cardTotal"],
+  props: ["cart", "cartQty", "cartTotal"],
   components: {
     price,
     FontAwesomeIcon,
